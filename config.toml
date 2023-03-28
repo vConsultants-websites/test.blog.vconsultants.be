@@ -1,0 +1,3 @@
+baseURL = 'https://blog.vconsultants.be/'
+languageCode = 'en-us'
+title = 'vConsultants Blog'
