@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on vConsultants Blog</title>
+    <link>https://blog.vconsultants.be/post/</link>
+    <description>Recent content in Posts on vConsultants Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 28 Mar 2023 13:13:18 +0000</lastBuildDate><atom:link href="https://blog.vconsultants.be/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://blog.vconsultants.be/post/my-first-post/</link>
+      <pubDate>Tue, 28 Mar 2023 13:13:18 +0000</pubDate>
+      
+      <guid>https://blog.vconsultants.be/post/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
