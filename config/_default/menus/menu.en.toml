@@ -16,11 +16,11 @@
 [[main]]
   parent = "Links"
   name = "LinkedIn"
-  url = "https://www.linkedin.com/"
+  url = "https://be.linkedin.com/in/haroldpreyers"
 [[main]]
   parent = "Links"
   name = "Twitter"
-  url = "https://twitter.com/"
+  url = "https://twitter.com/hpreyers"
 
 [[main]]
   name = "About"
@@ -33,15 +33,15 @@
   name = "github"
   type = "social"
   weight = 1
-  url = "https://github.com/#"
+  url = "https://github.com/hpreyers"
 [[social]]
   name = "twitter"
   weight = 2
-  url = "https://twitter.com/#"
+  url = "https://twitter.com/hpreyers"
 [[social]]
   name = "linkedin"
   weight = 3
-  url = "https://www.linkedin.com/in/#"
+  url = "https://www.linkedin.com/in/haroldpreyers"
 [[social]]
   name = "rss"
   weight = 4
