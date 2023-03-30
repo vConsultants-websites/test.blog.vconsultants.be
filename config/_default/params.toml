@@ -52,7 +52,7 @@ fontsDir = "fonts/" # without a leading forward slash
 fallBackOgImage = "images/thumbnail.png"
 
 # Logo image
-logo = "logos/logo.png"
+# logo = "logos/logo.png"
 
 # center logo on navbar
 centerLogo = false # Set to "true" for centering or "false" for left aligned.
@@ -67,7 +67,7 @@ codeLineNumbers = false
 enableMathNotation = false
 
 # directory(s) where your articles are located
-mainSections = ["post"] # see config details here https://gohugo.io/functions/where/#mainsections
+mainSections = ["post", "blog"] # see config details here https://gohugo.io/functions/where/#mainsections
 
 # Label Non inline images on an article body
 figurePositionShow = false # toggle on or off globally
@@ -90,8 +90,8 @@ enforceLightMode = false
 # footerLogo = "icons/copy.svg"
 
 # Customize Sidebar Disclaimer Text
-# sidebardisclaimer = true
-# disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
+sidebardisclaimer = true
+disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
 
 # Text for the languages menu.
 languageMenuName = "🌐"
@@ -100,7 +100,7 @@ languageMenuName = "🌐"
 # titleSeparator = "|"
 
 # Enable or disable comments globally. Default to true.
-# comments = false
+comments = false
 
 # Enable or disable Utterances (https://github.com/utterance/utterances) Github Issue-Based Commenting
 # utterances = true  #Run the utterances script in the single.html layout to load https://utteranc.es comments
@@ -126,16 +126,16 @@ languageMenuName = "🌐"
 
 # The year when ths website was created, this value is used in the copyright
 # notice of the footer.
-# since = 2016
+since = 2015
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
 # showRelatedInArticle = false
-# showRelatedInSidebar = false
+showRelatedInSidebar = false
 
 # website author
 [author]
 name = "Harold Preyers"
-# photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
+photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
