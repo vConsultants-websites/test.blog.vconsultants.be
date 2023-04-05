@@ -135,7 +135,7 @@ showRelatedInSidebar = false
 # website author
 [author]
 name = "Harold Preyers"
-photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
+photo = "https://s.gravatar.com/avatar/40e23b7571729442c3ea761a865b2fe6?s=80" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
