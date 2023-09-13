@@ -130,7 +130,7 @@ since = 2015
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
 # showRelatedInArticle = false
-showRelatedInSidebar = false
+showRelatedInSidebar = true
 
 # website author
 [author]
