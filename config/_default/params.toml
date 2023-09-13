@@ -91,7 +91,7 @@ enforceLightMode = false
 
 # Customize Sidebar Disclaimer Text
 sidebardisclaimer = true
-disclaimerText = "The opinions expressed on this site are my own personal opinions and do not represent my employer’s view in any way."
+disclaimerText = "The opinions expressed on this site are my own personal opinions. # and do not represent my employer’s view in any way."
 
 # Text for the languages menu.
 languageMenuName = "🌐"
