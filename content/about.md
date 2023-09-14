@@ -15,7 +15,7 @@ Harold is currently a Solution Architect at vConsultants and working for comdivi
 
 Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
-![:left](/images/vexpert-badge-stars.png?size=30px)
+![:left](/images/vexpert-badge-stars.png?size=30)
 Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
 ![:left](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge.png)
