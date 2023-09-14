@@ -115,7 +115,7 @@ numberOfRecentPosts = 8
 # numberOfFeaturedPosts = 8
 
 # Pin featured posts in list.
-# pinFeatured = true
+pinFeatured = true
 
 # Maximum number of pinned featured posts. (default: 8)
 # numberOfPinnedPosts = 8
