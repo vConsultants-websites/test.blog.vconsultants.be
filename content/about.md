@@ -11,6 +11,7 @@ author = "Hugo Authors"
 
 ![::img-medium](https://vexpert.vmware.com/directory/2093/vexpert-badge-stars.png |width=256)Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
+![::img-medium](https://vexpert.vmware.com/directory/2093/vexpert-badge-stars.png){:height="36px" width="36px"}Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
 ![:left::img-small](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge.png)He has been certified since VMware Virtual Infrastructure 3 and holds the following certifications, badges and awards:
 
