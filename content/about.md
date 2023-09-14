@@ -18,7 +18,7 @@ Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware 
 ![:left](/images/vexpert-badge-stars.jpeg?size=30)
 Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
-![:left](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge.png)
+![:left::round](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge.png)
 
 He has been certified since VMware Virtual Infrastructure 3 and holds the following certifications, badges and awards:
 
