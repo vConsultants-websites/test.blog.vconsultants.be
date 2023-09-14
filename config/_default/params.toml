@@ -3,7 +3,7 @@ enableSearch = true
 
 # socials
 twitter = "@hpreyers"
-largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
+largeTwitterCard = true # set to true if you want to show a large twitter card image. The default is a small twitter card image
 introDescription = "Harold is currently a Solution Architect at vConsultants and working for comdivision."
 introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
 # description = "A theme based on VMware's Clarity Design System for publishing technical blogs with Hugo." # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
