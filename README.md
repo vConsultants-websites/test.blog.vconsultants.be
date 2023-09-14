@@ -439,6 +439,7 @@ Assume that `figurePositionLabel` is set to "Figure" in `config.toml` and this i
 ```
 
 ![Figure captioning example](https://github.com/chipzoller/hugo-clarity/blob/master/images/image-figure.png)
+![Figure captioning example](images/image-figure.png)
 
 #### Inline images
 
@@ -456,7 +457,7 @@ To make an image inline, append `:inline` to its alt text.
 ![text describing the image:inline](someOtherImageUrl)
 ```
 
-![Inline image example](https://github.com/chipzoller/hugo-clarity/blob/master/images/image-inline.png)
+![Inline image example](images/image-inline.png)
 
 #### Float images to the left
 
