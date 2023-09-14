@@ -8,8 +8,9 @@ author = "Hugo Authors"
 
 
 ![:left::round](https://en.gravatar.com/userimage/24535676/9f7eef200a6a333f99268ce98cc7d65b.jpeg?size=256)Harold is currently a Solution Architect at vConsultants and working for comdivision. He has been working in the IT industry since early 2004. A year later Harold learned about VMware Virtual Infrastructure 3, started to install and play with the technology and has been a huge fanboy ever since. He loves his wife and children, playing soccer and snowboarding. After working for about eight years at several consultancy companies he started his own company in 2012.
+![::img-medium](someImageUrl)
 
-![::image-medium](https://vexpert.vmware.com/directory/2093/vexpert-badge-stars.png?size=128)Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
+![::image-medium](https://vexpert.vmware.com/directory/2093/vexpert-badge-stars.png)Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
 
 ![](https://www.credly.com/users/hpreyers/badges?sort=-state_updated_at&page=1)He has been certified since VMware Virtual Infrastructure 3 and holds the following certifications, badges and awards:
