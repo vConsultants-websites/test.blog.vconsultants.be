@@ -25,10 +25,6 @@ He has been certified since VMware Virtual Infrastructure 3 and holds the follow
 
 
 
-![](/images/vexpert-application-modernization-2023-badge-small.png "vExpert Application Modirnization")
+![](/images/vexpert-application-modernization-2023-badge-small.png) ![](/images/vexpert-avi-2023-badge-small.png)
 
-![](/images/vexpert-avi-2023-badge-small.png "vExpert NSX ALB")
-
-![](/images/vexpert-cloud-provider-2023-badge-small.png "vExpert Cloud Provider")
-
-![vExpert Multi-Cloud](/images/vexpert-multi-cloud-2023-badge-small.png)
+![](/images/vexpert-cloud-provider-2023-badge-small.png)![](/images/vexpert-multi-cloud-2023-badge-small.png)
