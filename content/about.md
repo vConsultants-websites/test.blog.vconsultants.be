@@ -14,16 +14,18 @@ Harold is currently a Solution Architect at vConsultants and working for comdivi
 ![:left](/images/vexpert-badge-stars-small.png)
 Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware vExpert status since 2018.
 
-![:left](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge-small.png)
-![:right](https://vexpert.vmware.com/images/vexpert-avi-2023-badge-small.png)
-![:left](https://vexpert.vmware.com/images/vexpert-cloud-provider-2023-badge-small.png)
-![:right](https://vexpert.vmware.com/images/vexpert-multi-cloud-2023-badge-small.png)
+
+
+
+![:left](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge-small.png "vExpert Application Modirnization")
+![:right](https://vexpert.vmware.com/images/vexpert-avi-2023-badge-small.png "vExpert NSX ALB")
+![:left](https://vexpert.vmware.com/images/vexpert-cloud-provider-2023-badge-small.png "vExpert Cloud Provider")
+![:right](https://vexpert.vmware.com/images/vexpert-multi-cloud-2023-badge-small.png "vExpert Multi-Cloud")
 
 
 
 
-He has been certified since VMware Virtual Infrastructure 3 and holds the following certifications, badges and awards:
-[credly.com](https://www.credly.com/users/hpreyers/badges)
+He has been certified since VMware Virtual Infrastructure 3 and holds the following certifications, badges and awards. See my transcript on [credly.com](https://www.credly.com/users/hpreyers/badges)
 
 
 
