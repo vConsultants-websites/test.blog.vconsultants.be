@@ -17,10 +17,13 @@ Harold blogs at blog.vconsultants.be since 2014 and has been awarded the VMware 
 
 ---
 
-![:left](https://vexpert.vmware.com/images/vexpert-application-modernization-2023-badge-small.png "vExpert Application Modirnization")
-![:right](https://vexpert.vmware.com/images/vexpert-avi-2023-badge-small.png "vExpert NSX ALB")
-![:left](https://vexpert.vmware.com/images/vexpert-cloud-provider-2023-badge-small.png "vExpert Cloud Provider")
-![:right](https://vexpert.vmware.com/images/vexpert-multi-cloud-2023-badge-small.png "vExpert Multi-Cloud")
+![:left](/images/vexpert-application-modernization-2023-badge-small.png "vExpert Application Modirnization")
+
+![:right](/images/vexpert-avi-2023-badge-small.png "vExpert NSX ALB")
+
+![:left](/images/vexpert-cloud-provider-2023-badge-small.png "vExpert Cloud Provider")
+
+![:right](/images/vexpert-multi-cloud-2023-badge-small.png "vExpert Multi-Cloud")
 
 ---
 
