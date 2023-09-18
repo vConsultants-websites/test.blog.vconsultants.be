@@ -32,16 +32,3 @@ He has been certified since VMware Virtual Infrastructure 3 and holds the follow
 ![](/images/vexpert-cloud-provider-2023-badge-small.png "vExpert Cloud Provider")
 
 ![vExpert Multi-Cloud](/images/vexpert-multi-cloud-2023-badge-small.png)
-
-
-
----
-
-
-
-
-
-
-
-
-
