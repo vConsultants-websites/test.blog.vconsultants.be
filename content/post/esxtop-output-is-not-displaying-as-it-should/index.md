@@ -1,7 +1,7 @@
 ---
 title: 'esxtop output is not displaying as it should'
 description: 'esxtop output launched from a terminal emulator displays incorrectly. We will update the environment variable value so esxtop information displays correctly.'
-summary: "Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page's front matter." # For the post in lists.
+summary: 'esxtop output launched from a terminal emulator displays incorrectly. We will update the environment variable value so esxtop information displays correctly.' # For the post in lists.
 date: '2020-12-04'
 author: 'Harold Preyers'
 usePageBundles: true
