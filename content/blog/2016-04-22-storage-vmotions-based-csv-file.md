@@ -26,12 +26,12 @@ This is still work in progress. The parameters to accept a different CSV file, l
 
 {{% notice note "Note" %}}
 This script has been built and tested on a VMware vSphere 5.5 environment.
-{{% /note %}}
+{{% /notice %}}
 
-{{% notice note "Info" %}}
+{{% notice info "Info" %}}
 **UPDATE : 2016-May-13**
 I updated the script to accept all parameters as shown in the description and I also added a Dry Run parameter. The Dry Run parameter will do a dry run escaping the vMotion sequence, so all actions will be logged. Combining the Debug and DryRun parameter will show everything on the console without executing.
-{{% /info %}}
+{{% /notice %}}
 
 
 The default location for the CSV file is C:\Scripts\Storage vMotion\Sources. The script will log to the C:\Scripts\Storage vMotion\Logs location. If the directory doesn't exist, it will be created.

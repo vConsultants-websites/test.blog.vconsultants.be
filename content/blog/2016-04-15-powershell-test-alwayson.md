@@ -22,13 +22,13 @@ This script checks which node is the primary in the SQL AlwaysOn cluster. A test
 
 {{% notice warning "Warning" %}}
 This script is **not to be run** in a production environment.
-{{% /warning %}}
+{{% /notice %}}
 
 The purpose of this script is to see if the SQL AlwaysOn Availability Group has done a failover. It also checks if a database within this AG is writable and if not how long it has been offline.
 
 {{% notice info "Info" %}}
 The part to check which node is the primary has been found on a blog, which I would have given the credits if I remembered where I found it.
-{{% /info %}}
+{{% /notice %}}
 
 ```powershell
 
