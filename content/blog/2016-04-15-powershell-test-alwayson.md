@@ -1,34 +1,45 @@
----
-title: Powershell Test AlwaysOn
-author: Harold Preyers
-type: post
-date: 2016-04-15T09:23:53+00:00
-url: /powershell-test-alwayson/
-et_enqueued_post_fonts:
-  - 'a:3:{s:6:"family";a:4:{s:13:"et-gf-allerta";s:15:"Allerta:regular";s:11:"et-gf-alice";s:13:"Alice:regular";s:16:"et-gf-montserrat";s:137:"Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic";s:19:"et-gf-alegreya-sans";s:112:"Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic";}s:6:"subset";a:7:{i:0;s:5:"latin";i:1;s:8:"cyrillic";i:2;s:12:"cyrillic-ext";i:3;s:9:"latin-ext";i:4;s:10:"vietnamese";i:5;s:5:"greek";i:6;s:9:"greek-ext";}s:9:"cache_key";s:72:"{"gph":-1,"divi":"4.20.2","wp":"6.1.1","enable_all_character_sets":"on"}";}'
-categories:
-  - Microsoft
-  - PowerShell
-  - SQL Server 2012
++++
+author = "Harold Preyers"
+title = "Powershell Test AlwaysOn"
+date = "2016-04-15"
+description = ""
+featured = false
+tags = [
+    "microsoft",
+    "powershell",
+    "sql-server-2012"
+]
+categories = [
+    "Microsoft",
+    "PowerShell",
+    "SQL Server 2012"
+]
++++
 
----
 # Powershell Test AlwaysOn
 
 This script checks which node is the primary in the SQL AlwaysOn cluster. A test database has been added to see if that database is writable. All actions are logged to a log file.
 
-This script is **not to be run** in a production environment. The purpose of this script is to see if the SQL AlwaysOn Availability Group has done a failover. It also checks if a database within this AG is writable and if not how long it has been offline.  
-The part to check which node is the primary has been found on a blog, which I would have given the credits if I remembered where I found it.
+{{% notice note "Warning" %}}
+This script is **not to be run** in a production environment.
+{{% /warning %}}
 
-<pre class="lang:ps decode:true " style="padding-left: 90px;">&lt;#
-	.Synopsis
-	Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
- 
- 	.Description
-	Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
- 
-	.Example
-	# No Examples available
-#&gt;
+The purpose of this script is to see if the SQL AlwaysOn Availability Group has done a failover. It also checks if a database within this AG is writable and if not how long it has been offline.
+
+{{% notice note "Info" %}}
+The part to check which node is the primary has been found on a blog, which I would have given the credits if I remembered where I found it.
+{{% /info %}}
+
+```powershell
+
+.Synopsis
+Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
+
+.Description
+Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
+
+.Example
+# No Examples available
 
 # Import SQL module
 Import-Module sqlps
@@ -157,6 +168,6 @@ While ($true) {
 
 	# Keep the values of the variables of the last run
 	$PrimaryReplicaLastRun = $PrimaryReplica
-}</pre>
+}
 
-&nbsp;
+```

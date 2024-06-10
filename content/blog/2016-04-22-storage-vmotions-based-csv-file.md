@@ -1,92 +1,100 @@
----
-title: Storage vMotions based on CSV file
-author: Harold Preyers
-type: post
-date: 2016-04-22T15:49:48+00:00
-draft: true
-url: /?p=49
-categories:
-  - Microsoft
-  - PowerCLI
-  - PowerShell
-  - VMware
-  - vSphere
-
----
++++
+author = "Harold Preyers"
+title = "Storage vMotions based on CSV file"
+date = "2016-04-22"
+description = ""
+featured = false
+tags = [
+    "microsoft",
+    "powershell",
+    "powercli",
+    "vmware",
+    "vsphere"
+]
+categories = [
+    "Microsoft",
+    "PowerShell",
+    "PowerCLI",
+    "VMware",
+    "vSphere"
+]
++++
  
-
 This script reads a CSV file and executes storage vmotions based on the input. The number of storage vmotions can be throttled and is by default set to maximum 6 concurrent vMotions. If the VM is already on the correct location it will not execute a storage vmotion for that vm.
 
-This is still work in progress. The parameters to accept a different CSV file,&nbsp;log file location and number of storage vmotions other than the default have not been added yet.
+This is still work in progress. The parameters to accept a different CSV file, log file location and number of storage vmotions other than the default have not been added yet.
 
+{{% notice note "Note" %}}
 This script has been built and tested on a VMware vSphere 5.5 environment.
+{{% /note %}}
 
+{{% notice note "Info" %}}
 **UPDATE : 2016-May-13**
-
 I updated the script to accept all parameters as shown in the description and I also added a Dry Run parameter. The Dry Run parameter will do a dry run escaping the vMotion sequence, so all actions will be logged. Combining the Debug and DryRun parameter will show everything on the console without executing.
+{{% /info %}}
 
-The default location for the CSV file is C:\Scripts\Storage vMotion\Sources. The script will log to the&nbsp;C:\Scripts\Storage vMotion\Logs location.&nbsp;If the directory doesn&#8217;t exist, it will be created.
 
-<pre class="wp-block-code lang:powershell"><code>&lt;#
-	.Synopsis
-	Moves VMs to the correct datastore based on a csv file.
+The default location for the CSV file is C:\Scripts\Storage vMotion\Sources. The script will log to the C:\Scripts\Storage vMotion\Logs location. If the directory doesn't exist, it will be created.
 
-	.Description
-	Moves VMs to the correct datastore based on a csv file.
+```powershell
+.Synopsis
+Moves VMs to the correct datastore based on a csv file.
 
-	.Author
-	Harold Preyers
+.Description
+Moves VMs to the correct datastore based on a csv file.
 
-	.Parameter DryRun
-	The DryRun parameter will create the log file without vMotion-ing the virtual machines to the correct datastore.
-	 
-	.Parameter Debug
-	The Debug parameter shows output to the screen. This will not prevent to start the vMotions.
+.Author
+Harold Preyers
 
-	.Parameter CSV_Dir
-	Supply your own CSV file location.
+.Parameter DryRun
+The DryRun parameter will create the log file without vMotion-ing the virtual machines to the correct datastore.
+	
+.Parameter Debug
+The Debug parameter shows output to the screen. This will not prevent to start the vMotions.
 
-	.Parameter CSV_FileName
-	Supply your own CSV file location.
+.Parameter CSV_Dir
+Supply your own CSV file location.
 
-	.Parameter Log_Dir
-	Supply your own LogFile location.
+.Parameter CSV_FileName
+Supply your own CSV file location.
 
-	.Parameter Log_FileName
-	Supply your own LogFile location. Don't add a file extension, the script will construct a filename based on the time of launch and add a .log extension
+.Parameter Log_Dir
+Supply your own LogFile location.
 
-	.Example
-	# Start storage vmotions without debug output based on the default CSV (C:\Scripts\Storage vMotion\Sources) and log file (C:\Scripts\Storage vMotion\Logs) location
-	# Name,Datastore
-	# VM1,DS1
-	# VM2,DS2
-	./svMotion_CSV.ps1
+.Parameter Log_FileName
+Supply your own LogFile location. Don't add a file extension, the script will construct a filename based on the time of launch and add a .log extension
 
-	.Example
-	# Start storage vmotions with debug output based on the default CSV (C:\Scripts\Storage vMotion\Sources) and log file (C:\Scripts\Storage vMotion\Logs) location
-	# Name,Datastore
-	# VM1,DS1
-	# VM2,DS2
-	./svMotion_CSV.ps1 -Debug $true
+.Example
+# Start storage vmotions without debug output based on the default CSV (C:\Scripts\Storage vMotion\Sources) and log file (C:\Scripts\Storage vMotion\Logs) location
+# Name,Datastore
+# VM1,DS1
+# VM2,DS2
+./svMotion_CSV.ps1
 
-	.Example
-	# Start storage vmotions with debug output based on custom CSV and log file location
-	# The CSV file should have the following lay-out
-	# Name,Datastore
-	# VM1,DS1
-	# VM2,DS2
-	./svMotion_CSV -Debug $true -Log_Dir "C:\Scripts\Storage vMotion\Logs" -Log_FileName svMotion_log -CSV_Dir "C:\Scripts\Storage vMotion\Sources" -CSV_File svMotion.csv
-#>
+.Example
+# Start storage vmotions with debug output based on the default CSV (C:\Scripts\Storage vMotion\Sources) and log file (C:\Scripts\Storage vMotion\Logs) location
+# Name,Datastore
+# VM1,DS1
+# VM2,DS2
+./svMotion_CSV.ps1 -Debug $true
+
+.Example
+# Start storage vmotions with debug output based on custom CSV and log file location
+# The CSV file should have the following lay-out
+# Name,Datastore
+# VM1,DS1
+# VM2,DS2
+./svMotion_CSV -Debug $true -Log_Dir "C:\Scripts\Storage vMotion\Logs" -Log_FileName svMotion_log -CSV_Dir "C:\Scripts\Storage vMotion\Sources" -CSV_File svMotion.csv
 
 # Accept parameters
-&#91;cmdletBinding()]
+[cmdletBinding()]
 	Param (
-		&#91;Bool]$Debug = $false			# Write output to console
-		&#91;Bool]$DryRun = $false			# Write logfile without vMotion
-		&#91;string]$CSV_Dir,			# CSV Directory location
-		&#91;string]$CSV_FileName,			# CSV Filename
-		&#91;string]$Log_Dir,			# Log Directory location
-		&#91;string]$Log_FileName,			# Log Filename
+		[Bool]$Debug = $false			# Write output to console
+		[Bool]$DryRun = $false			# Write logfile without vMotion
+		[string]$CSV_Dir,			# CSV Directory location
+		[string]$CSV_FileName,			# CSV Filename
+		[string]$Log_Dir,			# Log Directory location
+		[string]$Log_FileName,			# Log Filename
 	)
 
 # Variables
@@ -137,7 +145,7 @@ Foreach ($VM in $CSV) {
 		# What is the current Datastore of the virtual machine
 		$CurrentDS=(get-vm $VM.Name | Get-Datastore).Name
 		If ($CurrentDS -ne $VM.Datastore) {
-			# Log &amp; Debug
+			# Log & Debug
 			$Message = "Starting for VM " + $VM.Name + " to datastore " + $VM.Datastore
 			If ($Debug) {Write-Host "$Message" -Foregroundcolor darkyellow}
 			$Message | Out-File "$global:File" -Append
@@ -161,4 +169,4 @@ Foreach ($VM in $CSV) {
 		If ($Debug) {Write-Host "$Message" -Foregroundcolor red}
 		$Message | Out-File "$global:File" -Append
 	}
-}</code></pre>
+}

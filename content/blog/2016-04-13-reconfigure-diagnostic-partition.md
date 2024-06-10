@@ -25,11 +25,11 @@ $server_list = Get-VMhost
 
 Foreach ($srv in $server_list)
 {
- $esxcli = Get-EsxCli -VMhost $srv
- #$esxcli.system.coredump.file.add($null,"VMFS_log_partition","$srv.name",$null)
- $esxcli.system.coredump.partition.set($null,$null,$null,$true)
- $esxcli.system.coredump.partition.set($true,$null,$true,$null)
- $esxcli.system.coredump.partition.get()
+    $esxcli = Get-EsxCli -VMhost $srv
+    #$esxcli.system.coredump.file.add($null,"VMFS_log_partition","$srv.name",$null)
+    $esxcli.system.coredump.partition.set($null,$null,$null,$true)
+    $esxcli.system.coredump.partition.set($true,$null,$true,$null)
+    $esxcli.system.coredump.partition.get()
 }
 ```
 
