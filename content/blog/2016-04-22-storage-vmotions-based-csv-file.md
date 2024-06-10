@@ -25,11 +25,11 @@ This script reads a CSV file and executes storage vmotions based on the input. T
 This is still work in progress. The parameters to accept a different CSV file, log file location and number of storage vmotions other than the default have not been added yet.
 
 {{% notice note "Note" %}}
-This script has been built and tested on a VMware vSphere 5.5 environment.
+This script has been built and tested on a **VMware vSphere 5.5** environment.
 {{% /notice %}}
 
-{{% notice info "Info" %}}
-**UPDATE : 2016-May-13**
+{{% notice info "**UPDATE : 2016-May-13**" %}}
+
 I updated the script to accept all parameters as shown in the description and I also added a Dry Run parameter. The Dry Run parameter will do a dry run escaping the vMotion sequence, so all actions will be logged. Combining the Debug and DryRun parameter will show everything on the console without executing.
 {{% /notice %}}
 
