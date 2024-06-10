@@ -24,7 +24,7 @@ This script reads a CSV file and executes storage vmotions based on the input. T
 
 This is still work in progress. The parameters to accept a different CSV file, log file location and number of storage vmotions other than the default have not been added yet.
 
-{{% notice note "Note" %}}
+{{% notice note "VERSION INFO" %}}
 This script has been built and tested on a **VMware vSphere 5.5** environment.
 {{% /notice %}}
 
