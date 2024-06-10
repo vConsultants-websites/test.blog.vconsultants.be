@@ -20,13 +20,13 @@ categories = [
 
 This script checks which node is the primary in the SQL AlwaysOn cluster. A test database has been added to see if that database is writable. All actions are logged to a log file.
 
-{{% notice note "Warning" %}}
+{{% notice warning "Warning" %}}
 This script is **not to be run** in a production environment.
 {{% /warning %}}
 
 The purpose of this script is to see if the SQL AlwaysOn Availability Group has done a failover. It also checks if a database within this AG is writable and if not how long it has been offline.
 
-{{% notice note "Info" %}}
+{{% notice info "Info" %}}
 The part to check which node is the primary has been found on a blog, which I would have given the credits if I remembered where I found it.
 {{% /info %}}
 
