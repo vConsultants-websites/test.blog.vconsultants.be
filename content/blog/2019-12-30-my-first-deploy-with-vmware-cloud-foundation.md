@@ -2,6 +2,7 @@
 title: My first deploy with VMware Cloud Foundation
 author: Harold Preyers
 type: post
+toc: true
 date: 2019-12-30T15:23:03+00:00
 url: /my-first-deploy-with-vmware-cloud-foundation/
 featured_image: https://blog.vconsultants.be/wordpress/wp-content/uploads/2019/11/VCF_Lab_Constructor_beta_v3.8.png
