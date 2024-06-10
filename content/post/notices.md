@@ -1,6 +1,7 @@
 ---
 author: Hugo Authors
 title: Using Notices
+draft: true
 date: 2021-08-20
 description: Using Notices functionality within this theme
 ---

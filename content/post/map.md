@@ -1,6 +1,7 @@
 ---
 author: Hugo Authors
 title: Using OpenStreetMap
+draft: true
 date: 2022-02-14
 description: Using Map functionality within this theme using openstreetmap
 ---

@@ -63,7 +63,7 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngen.exe install “VimService55
 
 ```powershell
 #get connected esxi hosts
-$vmhostlist = get-vmhost |sort|select name
+$vmhostlist = get-vmhost | sort | select name
 
 #for each host show the power management policy setting
 foreach ($entry in $vmhostlist) {
@@ -107,13 +107,13 @@ ForEach ($entry in $VMHosts) {
 ### show connected vcenters/esxi's
 
 ```powershell
-<pre class="wp-block-code lang:ps"><code>$Global:DefaultVIServers</code></pre>
+$Global:DefaultVIServers
 ```
 
 ### connect to previously connected vcenters/esxi's
 
 ```powershell
-<pre class="wp-block-code lang:ps"><code>connect-viserver -menu</code></pre>
+connect-viserver -menu
 ```
 
 ### move vm storage vmotion
