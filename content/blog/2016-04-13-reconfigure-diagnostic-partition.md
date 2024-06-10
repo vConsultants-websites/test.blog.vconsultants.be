@@ -1,6 +1,6 @@
 +++
 author = "Harold Preyers"
-title = "Reconfigure diagnostic partition"
+title = "Reconfigure diagnostic partition with PowerCLI using Get-EsxCli"
 date = "2016-04-13"
 description = "Leverage powercli to execute esxcli commands remote."
 featured = true
@@ -15,8 +15,6 @@ categories = [
     "powercli"
 ]
 +++
-
-# Reconfigure diagnostic partition with PowerCLI using Get-EsxCli
 
 The following Get-EsxCli command will unconfigure your diagnostic partition and reconfigure with smart selection. This was needed because the install partition uuid had changed due to an option in the NetApp system while doing system testing.
 

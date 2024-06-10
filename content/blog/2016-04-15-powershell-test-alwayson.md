@@ -16,8 +16,6 @@ categories = [
 ]
 +++
 
-# Powershell Test AlwaysOn
-
 This script checks which node is the primary in the SQL AlwaysOn cluster. A test database has been added to see if that database is writable. All actions are logged to a log file.
 
 {{% notice warning "Warning" %}}

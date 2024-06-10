@@ -1,5 +1,5 @@
 {{- $.Scratch.Add "index" slice -}}
-{{- range .Site.Pages.ByDate.Reverse -}}
+{{- range .Site.Pages.ByPublishedDate.Reverse -}}
   {{- if ne .Type "search" -}}
     {{- $.Scratch.Add "index" (dict "title" .Title "body" .Plain "link" .Permalink "section" .Section "tags" .Params.tags) -}}
   {{- end -}}
