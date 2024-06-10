@@ -1,5 +1,5 @@
 # enable search
-enableSearch = false
+enableSearch = true
 
 # socials
 twitter = "@hpreyers"
@@ -129,7 +129,7 @@ pinFeatured = true
 since = 2015
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
-showRelatedInArticle = false
+showRelatedInArticle = true
 # showRelatedInSidebar = true
 
 # website author

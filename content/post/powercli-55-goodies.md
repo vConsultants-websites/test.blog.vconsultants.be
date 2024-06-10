@@ -119,7 +119,7 @@ connect-viserver -menu
 ### move vm storage vmotion
 
 ```powershell
-<pre class="wp-block-code lang:ps"><code>get-vm Win* | move-vm -Datastore (Get-Datastore sdc-t*)</code></pre>
+get-vm Win* | move-vm -Datastore (Get-Datastore sdc-t*)
 ```
 
 ### Mounting and unmounting NFS datastores
