@@ -1,15 +1,8 @@
 ---
-title: From IOmeter to VMware I/O Analyzer fling
-author: Harold Preyers
+title: 'From IOmeter to VMware I/O Analyzer fling'
+author: 'Harold Preyers'
 type: post
-date: 2016-11-09T00:17:43+00:00
-url: /from-iometer-to-vmware-io-analyzer/
-vantage_panels_no_legacy:
-  - 'true'
-siteorigin_page_settings:
-  - 'a:6:{s:6:"layout";s:7:"default";s:10:"page_title";b:1;s:15:"masthead_margin";b:1;s:13:"footer_margin";b:1;s:13:"hide_masthead";b:0;s:19:"hide_footer_widgets";b:0;}'
-et_enqueued_post_fonts:
-  - 'a:3:{s:6:"family";a:4:{s:13:"et-gf-allerta";s:15:"Allerta:regular";s:11:"et-gf-alice";s:13:"Alice:regular";s:16:"et-gf-montserrat";s:137:"Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic";s:19:"et-gf-alegreya-sans";s:112:"Alegreya+Sans:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,800,800italic,900,900italic";}s:6:"subset";a:7:{i:0;s:5:"latin";i:1;s:8:"cyrillic";i:2;s:12:"cyrillic-ext";i:3;s:9:"latin-ext";i:4;s:10:"vietnamese";i:5;s:5:"greek";i:6;s:9:"greek-ext";}s:9:"cache_key";s:72:"{"gph":-1,"divi":"4.20.2","wp":"6.1.1","enable_all_character_sets":"on"}";}'
+date: '2016-11-09T00:17:43+00:00'
 categories:
   - VMware
   - vSAN
@@ -20,6 +13,7 @@ tags:
   - vsphere
 
 ---
+
 VMware I/O Analyzer is a tool to launch orchestrated tests against a storage solution available from the VMware flings website. It can be used as a single appliance where the worker process and the analytics is done within. Additional appliances can be deployed to act as Worker VMs. The Analyzer VM launches IOmeter tests (on the Worker VMs) and after test completion it collects the data. All configuration is done from a web interface on the Analyzer VM.
 
 This post is describing how I deployed VMware I/O Analyzer and how I got to a test with maximized IOs. The first tests were conducted launching a IOmeter from within a virtual machine on the vSAN datastore and showed more or less 300 IOs being generated. In the end 18 Worker VMs&nbsp;with 8 disks each on a 6 host vSAN cluster were used generating 340K+ IOPS. The purpose was to create a baseline for a VSAN datastore maximum IOPs.

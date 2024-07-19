@@ -1,20 +1,19 @@
-+++
-author = "Harold Preyers"
-title = "Powershell Test AlwaysOn"
-date = "2016-04-15"
-description = ""
-featured = false
-tags = [
-    "microsoft",
-    "powershell",
-    "sql-server-2012"
-]
-categories = [
-    "Microsoft",
-    "PowerShell",
-    "SQL Server 2012"
-]
-+++
+---
+author: 'Harold Preyers'
+title: 'Powershell Test AlwaysOn'
+date: '2016-04-15'
+description: ''
+featured: false
+tags:
+    - microsoft
+    - powershell
+    - sql-server-2012
+
+categories:
+    - Microsoft
+    - PowerShell
+    - SQL Server 2012
+---
 
 This script checks which node is the primary in the SQL AlwaysOn cluster. A test database has been added to see if that database is writable. All actions are logged to a log file.
 
@@ -29,18 +28,19 @@ The part to check which node is the primary has been found on a blog, which I wo
 {{% /notice %}}
 
 ```powershell
+<#
+	.Synopsis
+	Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
 
-.Synopsis
-Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
+	.Description
+	Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
 
-.Description
-Monitors an SQL AlwaysOn cluster and tries to write to a database on this AlwaysOn cluster.
+	.Example
+	# No Examples available
 
-.Example
-# No Examples available
-
-# Import SQL module
-Import-Module sqlps
+	# Import SQL module
+	Import-Module sqlps
+#>
 
 # Connection parameters
 $ServerInstance="database_server" # if you are running SQL on a custom port it should be "database_server,port"
